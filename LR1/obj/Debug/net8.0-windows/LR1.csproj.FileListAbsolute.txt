@@ -1,0 +1,16 @@
+D:\8sem\modeling\LR1\bin\Debug\net8.0-windows\LR1.exe
+D:\8sem\modeling\LR1\bin\Debug\net8.0-windows\LR1.deps.json
+D:\8sem\modeling\LR1\bin\Debug\net8.0-windows\LR1.runtimeconfig.json
+D:\8sem\modeling\LR1\bin\Debug\net8.0-windows\LR1.dll
+D:\8sem\modeling\LR1\bin\Debug\net8.0-windows\LR1.pdb
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.csproj.GenerateResource.cache
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.GeneratedMSBuildEditorConfig.editorconfig
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.AssemblyInfoInputs.cache
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.AssemblyInfo.cs
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.csproj.CoreCompileInputs.cache
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.dll
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\refint\LR1.dll
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.pdb
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.genruntimeconfig.cache
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\ref\LR1.dll
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.Form1.resources
