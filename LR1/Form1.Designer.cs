@@ -62,6 +62,7 @@ namespace LR1
             button1.TabIndex = 1;
             button1.Text = "Далее";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
