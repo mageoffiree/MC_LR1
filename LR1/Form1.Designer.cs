@@ -39,6 +39,9 @@ namespace LR1
             textBox2 = new TextBox();
             dataGridView1 = new DataGridView();
             button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -111,18 +114,52 @@ namespace LR1
             // 
             // button2
             // 
-            button2.Location = new Point(77, 361);
+            button2.Location = new Point(34, 363);
             button2.Name = "button2";
             button2.Size = new Size(155, 23);
             button2.TabIndex = 8;
-            button2.Text = "Сохранить данные";
+            button2.Text = "Выполнить подсчет ";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(225, 363);
+            button3.Name = "button3";
+            button3.Size = new Size(177, 23);
+            button3.TabIndex = 9;
+            button3.Text = "Выделить нужные ячейки";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(429, 363);
+            button4.Name = "button4";
+            button4.Size = new Size(229, 23);
+            button4.TabIndex = 10;
+            button4.Text = "Заполнить случайнвыми значениями";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(226, 405);
+            button5.Name = "button5";
+            button5.Size = new Size(176, 23);
+            button5.TabIndex = 11;
+            button5.Text = "Снять выделение ячейки";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(textBox2);
@@ -151,5 +188,8 @@ namespace LR1
         private TextBox textBox2;
         private DataGridView dataGridView1;
         private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
     }
 }
