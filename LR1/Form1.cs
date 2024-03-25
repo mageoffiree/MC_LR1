@@ -33,9 +33,13 @@ namespace LR1
         }
         List<col> cols = new List<col>();
 
+        public int res; //результаты теста
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Random rnd_res = new Random(); // случайное значение для равноесия дрожащей руки
+            res = rnd_res.Next(-10, 10);
 
         }
 
@@ -126,8 +130,13 @@ namespace LR1
         {
             this.Hide();
             Form form = new Test();
-            form.FormClosed += (object s, FormClosedEventArgs ev) => { this.Show(); };
+            form.FormClosed += (object s, FormClosedEventArgs ev) => { this.Show(); res = DataBank.res_test; }; // забираю результаты теста 
             form.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label5.Text = Convert.ToString(res);
         }
     }
 }

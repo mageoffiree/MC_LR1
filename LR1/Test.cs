@@ -124,6 +124,7 @@ namespace LR1
                     button1.Enabled = false;
 
                     label2.Visible = true; // вывод результата
+                    DataBank.res_test = res; // сохраняю для переноса в главную форму
                     if (res > 0)
                     {
                         label2.Text = "Вы - альтруист";

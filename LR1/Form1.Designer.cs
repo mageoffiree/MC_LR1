@@ -30,7 +30,7 @@ namespace LR1
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label1 = new Label();
             button1 = new Button();
             label2 = new Label();
@@ -50,6 +50,8 @@ namespace LR1
             равновесиедрожащейРукиToolStripMenuItem = new ToolStripMenuItem();
             тестВашейЛичностиToolStripMenuItem = new ToolStripMenuItem();
             пройтиToolStripMenuItem = new ToolStripMenuItem();
+            button6 = new Button();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -117,14 +119,14 @@ namespace LR1
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Window;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = Color.Red;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
-            dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.Red;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.Location = new Point(24, 158);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(563, 176);
@@ -210,15 +212,36 @@ namespace LR1
             // пройтиToolStripMenuItem
             // 
             пройтиToolStripMenuItem.Name = "пройтиToolStripMenuItem";
-            пройтиToolStripMenuItem.Size = new Size(180, 22);
+            пройтиToolStripMenuItem.Size = new Size(116, 22);
             пройтиToolStripMenuItem.Text = "Пройти";
             пройтиToolStripMenuItem.Click += пройтиToolStripMenuItem_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(606, 95);
+            button6.Name = "button6";
+            button6.Size = new Size(75, 23);
+            button6.TabIndex = 13;
+            button6.Text = "button6";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(613, 49);
+            label5.Name = "label5";
+            label5.Size = new Size(38, 15);
+            label5.TabIndex = 14;
+            label5.Text = "label5";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -264,5 +287,7 @@ namespace LR1
         private ToolStripMenuItem равновесиедрожащейРукиToolStripMenuItem;
         private ToolStripMenuItem тестВашейЛичностиToolStripMenuItem;
         private ToolStripMenuItem пройтиToolStripMenuItem;
+        private Button button6;
+        private Label label5;
     }
 }
