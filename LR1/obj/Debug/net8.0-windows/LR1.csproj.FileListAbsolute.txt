@@ -14,3 +14,4 @@ D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.pdb
 D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.genruntimeconfig.cache
 D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\ref\LR1.dll
 D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.Form1.resources
+D:\8sem\modeling\LR1\obj\Debug\net8.0-windows\LR1.Test.resources

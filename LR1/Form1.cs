@@ -1,4 +1,5 @@
 using System.Data;
+using System.Diagnostics;
 using System.Drawing.Drawing2D;
 using System.Numerics;
 
@@ -35,7 +36,7 @@ namespace LR1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button2_Click_1(object sender, EventArgs e)  // работоспособность недоказана
@@ -64,13 +65,14 @@ namespace LR1
             for (int iRow = 0; iRow < n; iRow++)
                 for (int iCol = 0; iCol < m; iCol++)
                 {
-                    dataGridView1.Rows[iRow].Cells[iCol].Value = string.Concat(rnd.Next(-10, 10),",", rnd.Next(0, 10)); //ячейка = рандом
+                    dataGridView1.Rows[iRow].Cells[iCol].Value = string.Concat(rnd.Next(-10, 10), ",", rnd.Next(0, 10)); //ячейка = рандом
                 }
         }
 
         private void button5_Click(object sender, EventArgs e) // работает
         {
-            dataGridView1.Rows[2].Cells[2].Style.Font = new Font("Segoe UI", 9); // снимает жирный текст с ячейки
+            //dataGridView1.Rows[2].Cells[2].Style.Font = new Font("Segoe UI", 9); // снимает жирный текст с ячейки
+            dataGridView1.Rows[2].Cells[2].Style.SelectionBackColor = Color.Red; // снимает жирный текст с ячейки
         }
 
         private void button1_Click(object sender, EventArgs e)     // работает изначальное заполнение
@@ -83,13 +85,13 @@ namespace LR1
             {
                 cols.Add(new col(1.1, 1.1, 1.1, 1.1, 1.1));
             }
-           
+
             DataTable matrix = new DataTable("Матрица");
 
             int amount_cols = Convert.ToInt32(textBox2.Text); //беру кол-во столбцов
-            for (int i = 0;i < amount_cols; i++)
+            for (int i = 0; i < amount_cols; i++)
             {
-                matrix.Columns.Add(string.Join("*", i+1), typeof(double));
+                matrix.Columns.Add(string.Join("*", i + 1), typeof(double));
             }
 
             for (int i = 0; i < cols.Count; i++)
@@ -98,6 +100,34 @@ namespace LR1
             }                                                      // стартовое создание "пустой" матрицы (конец)
 
             dataGridView1.DataSource = matrix;                     // вывод матрицы в форму
+        }
+
+        private void равновесиеПоНэшуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo psInfo = new ProcessStartInfo
+            {
+                FileName = "https://ru.wikipedia.org/wiki/Равновесие_Нэша",
+                UseShellExecute = true
+            };
+            Process.Start(psInfo);
+        }
+
+        private void равновесиедрожащейРукиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo psInfo = new ProcessStartInfo
+            {
+                FileName = "https://ru.wikipedia.org/wiki/Равновесие_дрожащей_руки",
+                UseShellExecute = true
+            };
+            Process.Start(psInfo);
+        }
+
+        private void пройтиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form form = new Test();
+            form.FormClosed += (object s, FormClosedEventArgs ev) => { this.Show(); };
+            form.Show();
         }
     }
 }
